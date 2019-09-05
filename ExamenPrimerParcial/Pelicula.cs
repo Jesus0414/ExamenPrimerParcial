@@ -15,7 +15,7 @@ namespace ExamenPrimerParcial
             get { return _año; }
             set
             {
-                if (_año > 1800 || _año < 2019)
+                if (_año >= 1800 || _año <= 2019)
                 {
                     _año = value;
                 }
@@ -34,7 +34,7 @@ namespace ExamenPrimerParcial
             get { return _duracion; }
             set
             {
-                if (_duracion > 0)
+                if ( _duracion >= 0)
                 {
                     _duracion = value;
                 }
